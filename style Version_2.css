@@ -1,0 +1,669 @@
+#main {
+  transition: margin-left .5s;
+  padding: 10px;
+}
+.fa-search{
+	color: white;
+}
+.search-bar{
+display: inline-flex;
+}
+.search-box{
+  display: inline-flex;
+}
+.fa-university{
+	margin-right: 7px;
+}
+.nav-item.active a:hover{
+  box-shadow: 2px 2px 4px 2px rgba(196,187,226,1);
+}
+/**
+ * NAVBAR SEARCH
+ */
+ 
+.search-form {
+    float:right;
+    margin:0;
+    padding:0;
+    margin-top: 10px;
+}    
+    .btn {
+        padding:5px 8px;
+        border-radius:0;
+        background-color: transparent;
+        border: 1px solid transparent;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    } 
+ 
+@media (min-width: 768px) and (max-width:780px) {
+    .navbar .search-form.open .input-group {
+        width: 135px;
+    }
+}
+@media (min-width: 980px) {
+    .navbar .search-form.open .input-group {
+        width: 230px;
+    }
+}
+@media (min-width: 1300px) {
+    .navbar .search-form {
+        
+        .input-group-btn {
+            width:32px;
+            height:32px;
+            
+            .icon {
+                font-size:18px;
+            }
+        }
+        .form-control, 
+        .form-control:focus {
+            height:32px;
+        }
+        .input-group {
+            padding-right:32px;
+            width:32px;
+        }
+    }
+}
+.resp{
+  display: none;
+}
+@media only screen and (max-width: 980px)
+{
+	.search-box{
+    margin-top: 15px;
+		width: 100%;
+		position: absolute;	
+  }
+  .search-bar{
+    display: inline-flex;
+    display: none;
+  }
+  .search-bar.navbar-collapse{
+    display: inline-flex;
+  }
+  #Search-btn{
+    display: block;
+  }
+  .resp{
+    display: block;
+  }
+}
+/*--------------------------------------------------------------------SIDE_MENU--------------------------------------------------------*/
+.Side-Menu{
+box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.5); 
+  width: 15%;
+  height: 79%;
+  float: left;
+  font-size: 14px;
+  z-index: 2;
+  background-color: #ddd;
+  width: 20%;
+  z-index: 2;
+  font-size: 13px;
+  float: left;
+  background-color: #ddd;
+  height: 400px;
+  overflow-y: scroll;
+}
+.Side-Menu ul{
+  margin-left: 5px;
+  margin-right: 2px;
+}
+.Side-Menu ul li{
+  list-style-type: none;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.Side-Menu ul li:hover{
+  color: black;
+}
+.Side-Menu ul li ul{
+  display: none;
+  z-index: 10;
+  top: 77px;
+}
+.Side-Menu ul li:hover ul{
+  display: block;
+  height: 400px;
+  top: 121px;
+  margin-left: 14%;
+  padding: 0 100px 10px 10px;
+  position: fixed;
+  background: #ddd;
+  box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.Side-Menu ul li:hover .nav-only{
+  top: 67px;
+}
+.Side-Menu ul li ul{
+  margin-left: 28px;
+  margin-right: 2px;
+}
+.Side-Menu ul li ul li{
+  list-style-type: none;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.Side-Menu ul li ul li:hover{
+  color: black;
+}
+.Side-Menu ul li ul li ul{
+  display: none;
+  top: 77px;
+}
+.Side-Menu ul li ul li:hover ul{
+  display: block;
+  height: 400px;
+  margin-left: 128px;
+  padding: 0 100px 10px 10px;
+  position: fixed;
+  background: #ddd;
+  box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+
+/*.Side-Menu{
+	width: 20%;
+	z-index: 2;
+	font-size: 13px;
+	float: left;
+	background-color: #ddd;
+	height: 400px;
+	overflow-y: scroll;
+}
+.Side-Menu ul li:hover{
+	color: rgb(0,0,51);
+}
+.Side-Menu ul li:hover ul {
+  display: block;
+  top: 121px;
+	height: 400px;
+	margin-left: 14%;
+	padding: 0px 100px 10px 10px;
+	background: #ececec;
+	position: fixed;
+	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+*/.fa-angle-right{
+	margin-top: 6px;
+	margin-left: 23px;
+	float: right;
+}
+.fa-caret-right{
+margin-top: 16px;
+	margin-left: 22px;
+	float: right;	
+}
+
+.Side-Menu ul li ul.ex1{
+	display: none;
+}
+/*.Side-Menu ul li ul:hover .ex1{
+display: block;
+	height: 400px;
+	margin-left: 8%;
+	padding: 0px 80px 8px 8px;
+	background: #ddd;
+	position: fixed;
+	box-shadow: 3px 3px 6px 3px rgba(0,0,0,0,5);
+}*/
+
+/*.Side-Menu ul li ul li ul{
+  display: none;
+}*/
+#Menu-btn{
+	font-size: 30px
+	margin:30px;
+	color: white;
+	display: none;
+} 
+#Close-btn{
+	font-size: 30px
+	margin: 30px;
+	color: white;
+	display: none;
+}
+#acc-btn{
+	display: none;
+} 
+#acc-btn{
+	display: none;
+}
+.menu-display{
+  display: none;
+}
+@media only screen and (max-width: 980px){
+	.Side-Menu{
+    width: 60%;
+		z-index: 2;
+		top: 230px;
+		position: absolute;
+		font-size: 13px;
+		display: none;
+		overflow-y: scroll;
+		height: 70%;
+	}
+  .Side-Menu ul li:hover ul{
+    top: 20px;
+  }
+	.Side-Menu ul li:hover ul{
+    top: 45px;
+    margin-left: 21%;
+		position: relative;
+		overflow-y: scroll;
+		height: 470px;
+	}
+  .Side-Menu ul li ul li:hover ul {
+    top: 35px;
+    margin-left: 31%;   
+    height: 470px;
+    position: relative;
+  }
+  #Close-btn{
+    cursor: pointer;
+  }
+	#Menu-btn{
+		display: block;
+	}
+  .menu-display{
+    display: block;
+  }
+  .ex2{
+    display: none;
+  }
+}
+.fa-user{
+	margin-left: 2px;
+	margin-right: 5px;
+}
+.fa-star{
+	margin-left: 2px;
+	margin-right: 5px;
+}
+.fa-shopping-cart{
+	margin-right: 3px;
+}
+/*-----------------------------------Slider CSS-----------------------------*/
+.slider{
+	padding: 0 10px;
+	margin-left: 20%;
+}
+.carousel-item.active{
+	height: 390px;
+}
+.carousel-item{
+	height: 390px;
+}
+.carousel-item{
+	height: 390px;
+}
+.carousel{
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators{
+	z-index: 1 ! important;
+}
+@media only screen and (max-width: 980px){
+
+	.slider{
+    position: relative;
+		margin-left: 0;
+	}
+  .carousel-item.active img{
+    height: 100%;
+  }
+  .carousel-item img{
+    height: 100%;
+  }
+}
+/*--------------------------------Bread Crumbs-------------------
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+/*--------------------------------------------------Featured-Section---------------------------------------*/
+.Featured-Section{
+  margin: 50px 0;
+}
+.Featured-Section img{
+  width: 100%;
+  padding: 20px 0;
+  transition: 1s;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5)
+}
+.Featured-Section img:hover{
+  transform: scale(1.1);
+}
+/*.feature-title-box{
+  background: grey;
+  color: white; 
+  width: 180px;
+  padding: 1px 10px;
+  height: 40px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.feature-title-box h1{
+	font-size: 28px;
+}
+.feature-title-box::after{
+content:'';
+  position: absolute;
+  display: flex;
+  margin-top: -1px;
+  margin-left: 168px; 
+border-bottom: 40px solid grey;
+  border-right: 50px solid transparent;
+}
+*//*--------------------------------------------Onsale Section----------------------------------------------*/
+.title-box{
+  background: black;
+  color: #F5F5F5;
+  width: 170px;
+  padding: 4px 10px;
+  height: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  font-size: 30px;
+}
+.title-box h2{
+  font-size: 24px;
+}
+.title-box::after{
+  content:'';
+  border-top: 40px solid black;
+  border-right: 50px solid transparent;
+  position: absolute;
+  display: flex;
+  margin-top: -4px;
+  margin-left:158px; 
+}
+/*-----------------------------------product top----------------------------------*/
+.product-top img{
+  width: 100%;
+}
+.overlay-right{
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  margin-left: 0px;
+  width: 40%;
+}
+.overlay-right .fa{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  padding: 7px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.overlay-right button{
+	background: black;
+
+}
+/*.overlay-right .btn-secondary{
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+*/.product-top:hover .overlay-right{
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+/*-------------------------------Product-Bottom------------------------------*/
+.product-bottom .fa{
+  color: #708090;
+  font-size: 10px;
+}
+.product-bottom h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+.product-bottom h5{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.new-products{
+  margin: 50px 0px;
+}
+/*---------------------------------Website Features-------------------------------------------*/
+.website-features{
+  margin: 60px 0;
+}
+.website-features img{
+  width: 20%;
+}
+.feature-text{
+  margin-top: 10px;
+  float: right;
+  width: 80%;
+  padding-left: 20px;
+}
+.feature-box{
+  padding-top: 20px; 
+}
+/*-------------------------FOOTER---------------------*/
+.footer{
+  margin-top: 50px;
+  background: black;
+  color: white;
+}
+.footer h1{
+  font-size: 15px;
+  margin: 25px 0;
+}
+.footer p{
+  font-size: 12px;
+}
+.copyright{
+  margin-bottom: -80px;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.footer hr{
+  margin-top: 10px;
+  background-color: #ccc;
+}
+.footer-image img{
+  width: 150px;
+}
+.fa-gamepad{
+  margin-right: : 20px
+  background:#DC143C;
+  color: #DC143C;
+  font-size: 15px;
+}
+/*----------------------------------Single Product---------------------------------*/
+.single-product{
+  margin-top: 70px;
+}
+.new-arrival{
+  background: blue;
+  width: 50px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.col-md-7 h2{
+  color: #555;
+}
+.single-product .fa{
+  color: black;
+}
+.single-product .price{
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.single-product input{
+  border: 1px solid #ccc;
+  font-weight: bold;
+  height: 33px;
+  text-align: center;
+  width: 30px;
+}
+.single-product .btn-primary{
+  background: #191970 !important;
+  color: #fff;
+  font-size: 15px;
+  margin-left: 20px;
+  border: none;
+  box-shadow: none !important;
+}
+/*--------------------------------------Product Description---------------------------------*/
+.product-description h6{
+  margin-top: 50px;
+  color: blue;
+  font-weight: bold;
+}
+.product-description p{
+  margin-top: 30px;
+}
+.product-description hr{
+  margin-bottom: 50px;
+}
+/*----------------------------------About US---------------------*/
+.About img{
+  width: 100%;
+  height: 100%
+}
+/*.about-section {
+  padding: 50 0px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}*/
+.description{
+  margin-top: 25px;
+  color: black;
+}
+.description p{
+  font-size: 16px;
+  margin: 18px 15px;
+  margin-top: 13px;
+}
+.description h2{
+  font-weight: bold;
+  padding: 3px 6px;
+  font-size: 27px;
+}
+.h7{
+  font-size: 10px;
+  font-weight: bold;
+  margin: 3px 0px;
+  color: grey;
+}
+.mt{
+  cursor: pointer;
+  margin: 14 0px;
+}
+.fa-envelope{
+  font-size: 20px;
+}
+/*------------------------------Star rating page--------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+section {
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  max-width: 100%; /* Max width */
+  padding: 20px;
+}
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.checked {
+  color: yellow;
+}
+
+/* Three column layout */
+.side {
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: purple;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+/*------------------------------------Client Page-------------------------------*/
+.jumbotron-image {
+  background-image: url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.container-fluid hr{
+background-color: #ccc;
+}
+.cover img{
+  top: 47px;
+  padding: 18px 4px;
+}
